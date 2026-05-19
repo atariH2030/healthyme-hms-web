@@ -30,7 +30,7 @@ export default function AppShell({ children }: AppShellProps) {
               type="button"
               onClick={() => setCollapsed((value) => !value)}
               className="rounded-full border border-white/15 px-2 py-1 text-xs uppercase tracking-[0.2em] text-neon-blue hover:border-neon-blue/60"
-              aria-pressed={collapsed}
+              aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
             >
               {collapsed ? ">" : "<"}
             </button>

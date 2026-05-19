@@ -116,10 +116,16 @@ export default function SalesForm() {
       </div>
 
       <div>
-        <label className="text-xs uppercase tracking-[0.3em] text-white/60">
+        <label
+          htmlFor="tipo-atendimento"
+          className="text-xs uppercase tracking-[0.3em] text-white/60"
+        >
           Tipo de atendimento
         </label>
-        <select className="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-white/80 outline-none transition focus:border-neon-blue/70 focus:ring-1 focus:ring-neon-blue/40">
+        <select
+          id="tipo-atendimento"
+          className="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-white/80 outline-none transition focus:border-neon-blue/70 focus:ring-1 focus:ring-neon-blue/40"
+        >
           <option value="">Selecione</option>
           <option value="avaliacao">Avaliacao</option>
           <option value="retorno-avulso">Retorno Avulso</option>
@@ -142,10 +148,16 @@ export default function SalesForm() {
       </div>
 
       <div>
-        <label className="text-xs uppercase tracking-[0.3em] text-white/60">
+        <label
+          htmlFor="forma-pagamento"
+          className="text-xs uppercase tracking-[0.3em] text-white/60"
+        >
           Forma de pagamento
         </label>
-        <select className="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-white/80 outline-none transition focus:border-neon-blue/70 focus:ring-1 focus:ring-neon-blue/40">
+        <select
+          id="forma-pagamento"
+          className="mt-2 w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-3 text-sm text-white/80 outline-none transition focus:border-neon-blue/70 focus:ring-1 focus:ring-neon-blue/40"
+        >
           <option value="">Selecione</option>
           <option value="pix">Pix</option>
           <option value="debito">Debito</option>
